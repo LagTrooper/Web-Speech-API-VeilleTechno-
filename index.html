@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="webSpeech">
+      <h1>"DIS KEVIN"</h1>
+      <!--Speech Recognition-->
+      <div class="speechRecognition">
+        <textarea id="text-speechrecognition"></textarea>
+        <p>
+          <button id="enregistrer">Enregistrer</button>
+          <button id="stop">Stop</button>
+        </p>
+      </div>
+      <!--Image Robot-->
+      <div class="imageRobot">
+        <img id="robot" src="robot.jpg" />
+      </div>
+      <!--Speech Synthesis-->
+      <div class="speechSynthesis">
+        <textarea id="text-speechsynthesis"></textarea>
+        <label for="speed">Speed</label>
+        <input
+          type="number"
+          name="speed"
+          id="speed"
+          min=".5"
+          max="3"
+          step=".5"
+          value="1"
+        />
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <button id="stop-button">Stop</button>
+      </div>
+    </div>
+  </body>
+</html>
